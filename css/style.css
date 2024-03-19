@@ -3,8 +3,11 @@ body {
   }
   
   h1 {
-    color: white;
+    color: black;
     text-align: center;
+  } 
+  .my{
+    color: #000;
   }
   
   p {
@@ -16,6 +19,9 @@ body {
     text-align: center;
     color: red;
     border:3px double white;
+  }
+  .last{
+    color: #000;
   }
   /*body {
     background-image: url("susan-g-komen-3-day-qfWMUXDcN18-unsplash.jpg");
@@ -52,6 +58,9 @@ body {
     height: 50px;
     background-color: rgb(150, 124, 175);
     color:white ;
+}
+.dis{
+  color: #000;
 }
 
 p.a {
@@ -162,7 +171,7 @@ span{
     border: 3px solid #73AD21;
   }
 
-  img {
+  /* img {
       left: 0px;
       top: 0px;
       z-index: -1;
@@ -171,7 +180,7 @@ span{
       opacity: 0.2;
       cursor: pointer;
 
-  }
+  } */
 
   div#overflow {
     background-color: coral;
@@ -180,9 +189,10 @@ span{
     border: 1px solid black;
     overflow: scroll;
   }
-
+/* 
   img {
-    float: right;}
+    float: right;
+  } */
 
     span.a {
         display: inline;
@@ -713,10 +723,504 @@ body {
 .imgr{
   color: #000;
 }
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+#grad2 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+
+#grad3 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+}
+
+#grad4 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+}
+
+#grad5 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg, red 0px, red 10px, yellow 10px, yellow 20px);
+}
+
+#grad6 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+#grad7 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+  border-radius: 50%;
+}
+.transform{
+  width: 300px;
+  height: 100px;
+  background-color: rgb(153, 0, 255);
+  border: 1px solid black;
+  transform: translate(30px,60px);
+}
+/* 2D rotate */
+.row{
+  width: 300px;
+  height: 100px;
+  background-color: rgb(238, 0, 255);
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: rotate(20deg);
+}
+/*skew method */
+.skew {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(255, 0, 179);
+  border: 1px solid black;
+}
+div#myDiv1 {
+  transform: skew(20deg,10deg);
+}
+/*matrix method */
+.matrix{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv2 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv3 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+.rotatex {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(37, 195, 195);
+  border: 1px solid black;
+}
+
+#myDiv4 {
+  transform: rotateX(150deg);
+}
+/* rotate Y */
+.rotatey {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(37, 195, 195);
+  border: 1px solid black;
+}
+
+#myDiv5 {
+  transform: rotateY(150deg);
+}
+/* rotate Z */
+.rotateZ {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(37, 195, 195);
+  border: 1px solid black;
+}
+
+#myDiv6 {
+  transform: rotateZ(90deg);
+}
 
 
+.trans{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
 
+.trans:hover {
+  width: 300px;
+}
+/*transition curve*/
 
+.curve {
+  width: 100px;
+  height: 100px;
+  background: rgb(212, 36, 36);
+  transition: width 2s;
+}
 
+#div01 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
 
+.curve:hover {
+  width: 300px;
+}
+.delay {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+.delay:hover {
+  width: 300px;
+}
+
+.traform {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.traform:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+/* css animation */
+
+.animate {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+.anii{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*arrow tooltip */
+
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip1 .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}
+
+.resimage{
+  max-width: 100%;
+  height: auto;
+}
+/*image text */
+
+.container1 {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 400px;
+  font-size: 18px;
+}
+
+.imgte { 
+  max-width: 100%;
+  height:auto
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 400px;
+  font-size: 18px;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 400px;
+  font-size: 18px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 400px;
+  font-size: 18px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+/*img hover */
+.container5 {
+  position: relative;
+  width: 50%;
+}
+
+.image5 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container5:hover .overlay {
+  opacity: 1;
+}
+
+.text5 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*slide */
+.container6 {
+  position: relative;
+  width: 50%;
+}
+
+.image6 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay6 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container6:hover .overlay6 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text6 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.imageref {
+  -webkit-box-reflect: right;
+}
+
+.confit {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+/*mask image */
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+/*pagination */
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/*newspaper */
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: lightblue;
+  column-rule: 1px solid lightblue;
+  column-span: all;
+  column-width: 100px;
+}
+/*resize property */
+.resizep {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: horizontal;
+  overflow: auto;
+}
  
+/*traditional way */
+{
+  background-color: #1e90ff;
+}
+
+h2 {
+  border-bottom: 2px solid #1e90ff;
+}
+
+.container10 {
+  color: #1e90ff;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+button {
+  background-color: #ffffff;
+  color: #1e90ff;
+  border: 1px solid #1e90ff;
+  padding: 5px;
+}
+/*flex container */
+.flex-container8 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container8 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container7 {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container7 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
